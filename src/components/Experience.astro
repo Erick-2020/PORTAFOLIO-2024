@@ -1,0 +1,47 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+    {
+        date: 'DICIEMBRE 2023 - ENERO 2024 TERMINADO',
+        title: 'Web Developer',
+        description: 'Desarrollo de un sitio web para la empresa en un proyecto familiar para una oficina virtual y presencial de Finca Raíz con CMS WORDPRESS.',
+        link: 'https://fincaraizrh.netlify.app/',
+    },
+    {
+        date: 'NOVIEMBRE 2023',
+        title: 'SOPORTE TECNICO UT',
+        description: 'Soporte técnico para los dispositivos de cómputo y sistema web de los supernumerarios y de los equipos físicos a utilizar en toda la jornada de votación electoral territorial',
+    },
+    {
+        date: 'Supervisor UT',
+        title: 'JULIO 2023',
+        description: 'Supervisor y coordinador de los supernumerarios y de los equipos fisicos a utilizar en toda la jornada de inscripción',
+    },
+    {
+        date: '16 enero 2023 - 15 Marzo 2023',
+        title: 'Desarrollador WEB - CÁTEDRA SAS',
+        description: 'Desarrollo web de portales internos de la empresa administrados con el CMS WORDPRESS. Administración y desarrollo de proyectos y cursos virtuales con MOODLE. Manejo de servidores y DB en LINUX y su consola. ',
+    },
+    {
+        date: 'Julio 2022 - Septiembre 2022 TERMINADO',
+        title: 'Web Developer - PRODUCTOS DE ASEO ANGIE',
+        description: 'Desarrolle un sistema de ventas web para el manejo y administración de los empleados, usuarios, inventario, productos, clientes y facturas, utilizando HTML, BOOTSTRAP, mvc php y mySql.',
+    },
+    {
+        date: 'Octubre 2021 - Abril 2022 TERMINADO',
+        title: 'Aprendiz Etapa Productiva - SETI S.A.S',
+        description: 'Realice mi etapa productiva como aprendiz en sistemas y programación, trabajando de la mano de los ingenieros y consultores de los programas y proyectos de la empresa. Durante 6 meses, realizando mejoras a los proyectos aplicativos propios de la empresa programando y desarrollando nuevos apartados, realizando pruebas a los códigos y subiendo dichos proyectos con sus debidos cambios al repositorio correspondiente asignados al git lab.',
+    },
+]
+---
+<ol class="relative border-s border-gray-200">                  
+    {
+        EXPERIENCE.map((experience) => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experience} />   
+            </li>
+        ))
+    }
+</ol>
+

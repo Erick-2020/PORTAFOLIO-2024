@@ -1,0 +1,80 @@
+---
+import Angular from "./icons/Angular.astro"
+import As from "./icons/As.astro"
+import Bootstrap from "./icons/Bootstrap.astro"
+import Css from "./icons/Css.astro"
+import Html from "./icons/Html.astro"
+import Js from "./icons/Js.astro"
+import Tailwind from "./icons/Tailwind.astro"
+const TAGS ={
+    ANGULAR : {
+        name: 'Angular',
+        icon: Angular
+    },
+    BOOTSTRAP : {
+        name: 'bootstrap',
+        icon: Bootstrap
+    },
+    HTML : {
+        name: 'HTML',
+        icon: Html
+    },
+    CSS : {
+        name: 'CSS',
+        icon: Css
+    },
+    JS : {
+        name: 'Javascript',
+        icon: Js
+    },
+    ASTRO : {
+        name: 'ASTRO',
+        icon: As
+    },
+    TAILWIND : {
+        name: 'Tailwind',
+        icon: Tailwind
+    }
+}
+
+const PROJECTS = [
+    {
+        title: 'Pagina Web R&H',
+        description: 'Pagina Web de la empresa Propeidades Finca Raiz R&H, actualizada con su ultimo portafolio de uso, con las ultimas versiones de las tecnologias usadas',
+        link: '#',
+        github: '#',
+        image: '/projects/project-1.webp',
+        tags: [TAGS.ANGULAR,TAGS.BOOTSTRAP,TAGS.HTML,TAGS.CSS,TAGS.JS],
+    },
+    {
+        title: 'Portafolio Personal',
+        description: 'Este portafolio, creado y optimizado con los mejores framworks y tecnologias del 2024',
+        link: '#',
+        github: '#',
+        image: '/projects/project-1.webp',
+        tags: [TAGS.ASTRO,TAGS.TAILWIND,TAGS.HTML,TAGS.JS],
+    }
+
+
+]
+---
+
+{
+    PROJECTS.map(project => (
+        <article>
+            <h3 class="text-2xl font-semibold text-yellow-200/70 mb-2">{project.title}</h3>
+            <p class="text-lg mb-4 text-pretty">{project.description}</p>
+            <ul class="flex gap-x-4 flex-row mb-2">
+                {project.tags.map((tag)=> (
+                    <li>
+                        <span class={`flex gap-x-2 rounded-full text-sm bg-gray-500/30 py-2 px-2 items-center`}>
+                            <tag.icon class="size-4" />
+                            {tag.name}
+                        </span>
+                    </li>
+                ))}
+            </ul>
+            <img class="rounded shadow-2xl shadow-white/10" src={project.image} alt={`Imagen del proyecto ${project.title}`}>
+        </article>
+    ))
+}

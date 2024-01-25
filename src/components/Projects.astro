@@ -1,11 +1,14 @@
 ---
+import LinkButton from "./LinkButton.astro"
 import Angular from "./icons/Angular.astro"
 import As from "./icons/As.astro"
 import Bootstrap from "./icons/Bootstrap.astro"
 import Css from "./icons/Css.astro"
+import Git from "./icons/Git.astro"
 import Html from "./icons/Html.astro"
 import Js from "./icons/Js.astro"
 import Tailwind from "./icons/Tailwind.astro"
+import Web from "./icons/Web.astro"
 const TAGS ={
     ANGULAR : {
         name: 'Angular',
@@ -74,6 +77,18 @@ const PROJECTS = [
                 ))}
             </ul>
             <img class="rounded shadow-2xl shadow-white/10" src={project.image} alt={`Imagen del proyecto ${project.title}`}>
+            <div class="flex gap-x-4 justify-end mt-4">
+                <LinkButton href={project.github}>
+                    <Git class="size-6 mr-2" />
+                    Ver Código Fuente 
+    
+                </LinkButton>
+                
+                <LinkButton href={project.link}>
+                    <Web class="mr-2" />
+                    Ir al proyecto    
+                </LinkButton>
+            </div>
         </article>
     ))
 }

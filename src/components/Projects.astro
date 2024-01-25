@@ -24,7 +24,7 @@ const TAGS ={
         icon: Css
     },
     JS : {
-        name: 'Javascript',
+        name: 'JavaScript',
         icon: Js
     },
     ASTRO : {
@@ -40,35 +40,34 @@ const TAGS ={
 const PROJECTS = [
     {
         title: 'Pagina Web R&H',
-        description: 'Pagina Web de la empresa Propeidades Finca Raiz R&H, actualizada con su ultimo portafolio de uso, con las últimas versiones de las tecnologias usadas',
+        description: 'Pagina Web de la empresa Propeidades Finca Raiz R&H, actualizada con su ultimo portafolio de uso.',
         link: '#',
         github: '#',
         image: '/projects/project-1.webp',
         tags: [TAGS.ANGULAR,TAGS.BOOTSTRAP,TAGS.HTML,TAGS.CSS,TAGS.JS],
     },
     {
-        title: 'Portafolio Personal',
-        description: 'Este portafolio, creado y optimizado con los mejores frameworks y tecnologias del 2024',
+        title: 'Lista de Tareas',
+        description: 'Mini proyecto para aprendizaje personal con la tecnologia ANGULAR 17',
         link: '#',
         github: '#',
-        image: '/projects/project-1.webp',
-        tags: [TAGS.ASTRO,TAGS.TAILWIND,TAGS.HTML,TAGS.JS],
+        image: '/projects/project-todoapp.jpg',
+        tags: [TAGS.ANGULAR,TAGS.CSS,TAGS.HTML],
     }
-
 
 ]
 ---
 
 {
     PROJECTS.map(project => (
-        <article>
+        <article class="w-[500px] h-auto p-4">
             <h3 class="text-2xl font-semibold text-red-500/70 mb-2">{project.title}</h3>
             <p class="text-lg mb-4 text-pretty">{project.description}</p>
-            <ul class="flex gap-x-4 flex-row mb-2">
+            <ul class="flex gap-x-4 flex-row flex-wrap mb-2">
                 {project.tags.map((tag)=> (
-                    <li>
-                        <span class={`flex gap-x-2 rounded-full text-sm bg-gray-500/30 py-2 px-2 items-center`}>
-                            <tag.icon class="size-4" />
+                    <li class=" py-1">
+                        <span class={`flex gap-x-2 rounded-full text-xs bg-gray-500/30 py-2 px-2 items-center`}>
+                            <tag.icon class="size-3" />
                             {tag.name}
                         </span>
                     </li>

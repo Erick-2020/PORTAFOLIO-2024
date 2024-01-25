@@ -1,19 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Badge from '../components/Badge.astro';
+
+import AboutMe from '../components/AboutMe.astro';
 import AngularIcon from '../components/icons/Angular.astro';
-import LinkedIn from '../components/icons/LinkedIn.astro';
-import Fb from '../components/icons/Fb.astro'
-import Ig from '../components/icons/Ig.astro'
-import SocialPill from '../components/icons/SocialPill.astro';
-import Git from '../components/icons/Git.astro';
-import WhatsApp from '../components/icons/WhatsApp.astro';
+import Badge from '../components/Badge.astro';
+import Card from '../components/Card.astro';
 import Email from '../components/icons/Email.astro';
 import Experience from '../components/Experience.astro';
-import Section from '../components/Section.astro';
+import Fb from '../components/icons/Fb.astro'
+import Git from '../components/icons/Git.astro';
+import Ig from '../components/icons/Ig.astro'
 import Laboral from '../components/icons/Laboral.astro';
+import LinkedIn from '../components/icons/LinkedIn.astro';
 import Projects from '../components/Projects.astro';
+import Section from '../components/Section.astro';
+import SobreMI from '../components/icons/SobreMI.astro';
+import SocialPill from '../components/icons/SocialPill.astro';
+import WhatsApp from '../components/icons/WhatsApp.astro';
 
 ---
 
@@ -22,7 +25,7 @@ import Projects from '../components/Projects.astro';
 	description="Contrata a Erick Ramirez para crear tu aplicación web. Desarrollador Web Especializado en crear aplicaciones únicas"
 	>
 	<main class="px-4">
-		<section class="flex pt-44 justify-center items-center">
+		<section id="inicio" class="flex pt-44 justify-center items-center">
 			<div>
 				<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">Hola, soy Erick Ramirez
 					<a
@@ -72,7 +75,7 @@ import Projects from '../components/Projects.astro';
 						WhatsApp
 				</SocialPill>
 			</nav>
-			<div class="bg-white text-black text-xs font-semibold fixed right-9 bottom-9 flex items-center py-1 px-1 gap-x-1 rounded-xl z-10 shadow-md shadow-white">
+			<div class="bg-white text-black text-xs font-semibold fixed right-9 bottom-9 flex items-center py-1 px-1 gap-x-1 rounded-lg z-10">
 				<WhatsApp class="size-4" />
 					<button id="botonContacto" class="">Contáctame</button>
 			</div>
@@ -87,12 +90,24 @@ import Projects from '../components/Projects.astro';
 			<Experience />
 		</Section>
 
-		<Section id="proyectos">
+		<Section id="proyectos" class=" pb-0">
 			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
 				<Laboral class="size-7" />
 				Proyectos
 			</h2>
-			<Projects />
+		</Section>
+		<section class="pb-24">
+			<article class="flex justify-center">
+				<Projects/>
+			</article>
+		</section>
+
+		<Section id="about">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<SobreMI class="size-7" />
+				Sobre Mi
+			</h2>
+			<AboutMe />
 		</Section>
 	</main>
 </Layout>

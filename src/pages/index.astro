@@ -1,114 +1,129 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
-import AboutMe from '../components/AboutMe.astro';
-import AngularIcon from '../components/icons/Angular.astro';
-import Badge from '../components/Badge.astro';
-import Card from '../components/Card.astro';
-import Email from '../components/icons/Email.astro';
-import Experience from '../components/Experience.astro';
-import Fb from '../components/icons/Fb.astro'
-import Git from '../components/icons/Git.astro';
-import Ig from '../components/icons/Ig.astro'
-import Laboral from '../components/icons/Laboral.astro';
-import LinkedIn from '../components/icons/LinkedIn.astro';
-import Projects from '../components/Projects.astro';
-import Section from '../components/Section.astro';
-import SobreMI from '../components/SobreMI.astro';
-import SocialPill from '../components/icons/SocialPill.astro';
-import WhatsApp from '../components/icons/WhatsApp.astro';
-
+import AboutMe from "../components/AboutMe.astro";
+import AngularIcon from "../components/icons/Angular.astro";
+import Badge from "../components/Badge.astro";
+import Card from "../components/Card.astro";
+import Email from "../components/icons/Email.astro";
+import Experience from "../components/Experience.astro";
+import Fb from "../components/icons/Fb.astro";
+import Git from "../components/icons/Git.astro";
+import Ig from "../components/icons/Ig.astro";
+import Laboral from "../components/icons/Laboral.astro";
+import LinkedIn from "../components/icons/LinkedIn.astro";
+import Projects from "../components/Projects.astro";
+import Section from "../components/Section.astro";
+import SobreMI from "../components/SobreMI.astro";
+import SocialPill from "../components/icons/SocialPill.astro";
+import WhatsApp from "../components/icons/WhatsApp.astro";
 ---
 
-<Layout 
-	title="Portafolio de Erick Ramirez - Desarrollador y Programador web con 3 años de experiencia"
-	description="Contrata a Erick Ramirez para crear tu aplicación web. Desarrollador Web Especializado en crear aplicaciones únicas"
-	>
-	<main class="px-4">
-		<section id="inicio" class="flex pt-44 justify-center items-center">
-			<div>
-				<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">Hola, soy Erick Ramirez
-					<a
-						href="https://www.linkedin.com/in/ingerick/"
-						target="_blank"
-						rel="noopener"
-						class="flex justify-center items-center"><Badge>Disponible para trabajar</Badge></a>
-					</h1>
-				<h2 class=" text-xl lg:text-2xl text-wrap max-w-[700px]"><span>+2 años de experiencia.</span>
-					<span class="text-red-500/70">Desarrollador Web Frontend y Broker.</span>
-					<span class="text-green-200/90">De Villeta, Colombia.</span>
-					<span class="opacity-85">Especializado en crear aplicaciones únicas.</span>
-				</h2>
-			</div>
-			<div class="flex items-center px-20">
-				<img 
-					class="rounded w-40" 
-					src="/profile-photo.jpg" 
-					alt="Erick Foto"
-				/>
-			</div>
-		</section>
-		<section class="flex justify-center items-center pt-10 pb-40">
-			<nav class="flex gap-4 mt-8 flex-wrap">
-				<SocialPill href="#">
-					<LinkedIn class="size-4" />
-						LinkedIn
-				</SocialPill>
-				<SocialPill href="#" >
-					<Git class="size-4 md:size-6" />
-						GitHub
-				</SocialPill>
-				<SocialPill href="mailto:eramirezhenandez@gmail.com">
-					<Email class="size-4" />
-						eramirezhenandez@gmail.com
-				</SocialPill>
-				<SocialPill href="#">
-					<Fb class="size-4" />
-						Facebook
-				</SocialPill>
-				<SocialPill href="#">
-					<Ig class="size-4" />
-						Instagram
-				</SocialPill>
-				<SocialPill href="#">
-					<WhatsApp class="size-4" />
-						WhatsApp
-				</SocialPill>
-			</nav>
-			<div class="bg-white text-black text-xs font-semibold fixed right-9 bottom-9 flex items-center py-1 px-1 gap-x-1 rounded-lg z-10">
-				<WhatsApp class="size-4" />
-					<button id="botonContacto" class="">Contáctame</button>
-			</div>
+<Layout
+  title="Portafolio de Erick Ramirez - Desarrollador y Programador web con 3 años de experiencia"
+  description="Contrata a Erick Ramirez para crear tu aplicación web. Desarrollador Web Especializado en crear aplicaciones únicas"
+>
+  <main class="px-4">
+    <section id="inicio" class="flex pt-44 justify-center items-center">
+      <div>
+        <h1
+          class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+        >
+          Hola, soy Erick Ramirez
+          <a
+            href="https://www.linkedin.com/in/ingerick/"
+            target="_blank"
+            rel="noopener"
+            class="flex justify-center items-center"
+            ><Badge>Disponible para trabajar</Badge></a
+          >
+        </h1>
+        <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+          <span>+2 años de experiencia.</span>
+          <span class="text-red-500/70"
+            >Desarrollador Web Frontend y Broker.</span
+          >
+          <span class="text-green-200/90">De Villeta, Colombia.</span>
+          <span class="opacity-85"
+            >Especializado en crear aplicaciones únicas.</span
+          >
+        </h2>
+      </div>
+      <div class="flex items-center px-20">
+        <img class="rounded w-40" src="/profile-photo.jpg" alt="Erick Foto" />
+      </div>
+    </section>
+    <section class="flex justify-center items-center pt-10 pb-40">
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href="#">
+          <LinkedIn class="size-4" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="#">
+          <Git class="size-4 md:size-6" />
+          GitHub
+        </SocialPill>
+        <SocialPill href="mailto:eramirezhenandez@gmail.com">
+          <Email class="size-4" />
+          eramirezhenandez@gmail.com
+        </SocialPill>
+        <SocialPill href="#">
+          <Fb class="size-4" />
+          Facebook
+        </SocialPill>
+        <SocialPill href="#">
+          <Ig class="size-4" />
+          Instagram
+        </SocialPill>
+        <SocialPill href="#">
+          <WhatsApp class="size-4" />
+          WhatsApp
+        </SocialPill>
+      </nav>
+      <!-- <div class="bg-white text-black text-xs font-semibold fixed right-9 bottom-9 flex items-center py-1 px-1 gap-x-1 rounded-lg z-10"> -->
+      <!-- <button id="botonContacto" class="">Contáctame</button> -->
+      <button
+        class="fixed right-9 bottom-9 inline-flex overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+      >
+        <span
+          class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
+        ></span>
+        <span
+          class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl"
+        >
+          <WhatsApp class="size-4" />
+          Contáctame
+        </span>
+      </button>
+      <!-- </div> -->
+    </section>
 
-		</section>
-			
-		<Section id="experiencia">
-			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-				<Laboral class="size-7" />
-				Experiencia Laboral
-			</h2>
-			<Experience />
-		</Section>
+    <Section id="experiencia">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Laboral class="size-7" />
+        Experiencia Laboral
+      </h2>
+      <Experience />
+    </Section>
 
-		<Section id="proyectos" class=" pb-0">
-			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-				<Laboral class="size-7" />
-				Proyectos
-			</h2>
-		</Section>
-		<section class="pb-24">
-			<article class="flex justify-center">
-				<Projects/>
-			</article>
-		</section>
+    <Section id="proyectos" class="pb-0">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Laboral class="size-7" />
+        Proyectos
+      </h2>
+    </Section>
+    <section class="pb-24">
+      <article class="flex flex-wrap justify-center">
+        <Projects />
+      </article>
+    </section>
 
-		<Section id="about">
-			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-				<SobreMI class="size-7" />
-				Sobre Mi
-			</h2>
-			<AboutMe />
-		</Section>
-	</main>
+    <Section id="about">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <SobreMI class="size-7" />
+        Sobre Mi
+      </h2>
+      <AboutMe />
+    </Section>
+  </main>
 </Layout>
-
